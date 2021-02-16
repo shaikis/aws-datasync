@@ -13,7 +13,13 @@ eval `ssh-agent -s -t 4000`
 ssh-add ~/.ssh/id_rsa
 
 ssh-add ~/.ssh/nfs-temp
-
+echo ""
+echo "configure infrasturcture related to Data sync"
+echo ""
+cd ./datasync_terraform/
+terraform init -varfile=./vars/prod.tfvars
+terraform plan -varfile=./vars/prod.tfvars
+terraform apply -auto-approve -varfile=./vars/prod.tfvars
 
 echo ""
 echo "Configuring software on $ENVIRONMENT environment using Ansible"
