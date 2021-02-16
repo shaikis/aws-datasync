@@ -25,7 +25,7 @@ echo ""
 echo "Configuring software on $ENVIRONMENT environment using Ansible"
 echo ""
 
-ansible-galaxy install -r ./oem-agent-requirements.yml
+#ansible-galaxy install -r ./oem-agent-requirements.yml
 
 ansible-playbook \
         -e "ansible_ssh_user=ec2-user" \
