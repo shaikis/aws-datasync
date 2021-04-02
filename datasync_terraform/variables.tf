@@ -1,0 +1,12 @@
+variable "data_sync_agent_name" {}
+variable "data_sync_service_name" {}
+variable "aws_account_owner" {}
+variable "vpc_id" {}
+variable "subnet_ids" {}
+variable "vpc_endpoint_sg_name" {}
+variable "vpc_cidr_block" {}
+variable "datasync_agent_sg_name" {}
+variable "ec2_key_pair" {}
+variable "agent_instance_type" {}
+variable "aws_instance_profile_name" {}
+variable "data_sync_agent_iam_role" {}

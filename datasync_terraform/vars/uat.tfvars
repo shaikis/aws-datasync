@@ -1,0 +1,10 @@
+vpc_id="vpc-XXXXXX"
+subnet_ids=[subent-1, subnet-2]
+aws_account_owner="account number here"
+data_sync_service_name="com.amazonaws.us-east-1.datasync"
+vpc_cidr_block="10.112.0.0/16"
+datasync_agent_sg_name="datasync_agent_sg"
+ec2_key_pair="prod_key"
+agent_instance_type="m4.2xlarge"
+aws_instance_profile_name="datasync-agent-profile"
+data_sync_agent_iam_role="data_sync_agent_role"

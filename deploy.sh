@@ -31,7 +31,7 @@ ansible-playbook \
         -e "ansible_ssh_user=ec2-user" \
         --private-key ~/.ssh/nfs-temp \
         -i ./inventory/ec2.py \
-        ./playbooks/main.yml
+        ./configure_nfs_server/playbooks/main.yml
 
 
 #rm ansible-ec2*
